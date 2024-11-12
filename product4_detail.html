@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail Page</title>
+    <style>
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .divider {
+            width: 100%;
+            border-top: 1px solid black;
+            margin: 10px 0;
+        }
+
+        .product-container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px;
+            padding: 10px;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .product-image {
+            flex: 1;
+            max-width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .product-image img {
+            width: 550px;
+            height: 900px;
+            border: 4px solid beige;
+            border-radius: 8px;
+            margin-left: -20px;
+        }
+
+        .product-details {
+            flex: 1;
+            max-width: 50%;
+            padding: 10px;
+        }
+
+        .product-details h2 {
+            font-size: 30px;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .product-details h3 {
+            font-size: 25px;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .product-details h4 {
+            font-size: 20px;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .product-details p {
+            font-size: 16px;
+            color: black;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        #size {
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(8, auto);
+            gap: 12px;
+        }
+
+        .size-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 62px;
+            background-color: white;
+            border: 1px solid grey;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #quantity {
+            display: grid;
+            width: 100%;
+            grid-template-columns: 40px 40px 40px;
+            grid-template-rows: auto;
+        }
+
+        .quanity-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 40px;
+            background-color: white;
+            border: 1px solid grey;
+            font-size: 14px;
+            cursor: pointer;
+            
+
+        }
+        .button-container{
+            display: grid;
+            justify-content: left;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            gap:15px;
+            
+        }
+
+        .button-container button{
+            background-color: beige;
+            color: black;
+            border: 1px solid black;
+            cursor: pointer;
+            padding: 5px;
+            width: 250px;
+            height: 40px;
+        }
+        .section-detail{
+            display: grid;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .section-detail h3 {
+            font-size: 20px;
+            font-weight: 100;
+            color: black;
+            font-style: italic;
+        }
+        .section-detail p{
+            font-size: 17px;
+            font-weight: 60;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="divider"></div>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="https://static.hopscotch.in/fstatic/product/202408/02ce1b62-6fcd-42d7-95c8-d881d71b8183_large.jpg?version=1724140490157&tr=f-webp,w-480,c-at_max,n-normal" alt="Cowl Tunic Set Peach">
+        </div>
+        <div class="product-details">
+            <h2>Rosette Party Dress wuith Beaded Straps</h2>
+            <h3>Designer: Mati</h3>
+            <h3>Rs. 2,500</h3>
+            <br>
+            <br>
+            <h4>Size</h4>
+            <br>
+            <div id="size">
+                <div class="size-box">XS</div>
+                <div class="size-box">S</div>
+                <div class="size-box">M</div>
+                <div class="size-box">L</div>
+                <div class="size-box">XL</div>
+                <div class="size-box">XXL</div>
+                <div class="size-box">XXXL</div>
+                <div class="size-box">4XL</div>
+                <div class="size-box">5XL</div>
+                <div class="size-box">6XL</div>
+                <div class="size-box">7XL</div>
+            </div>
+            <br>
+            <h4>Quantity</h4>
+            <div id="quantity">
+                <div class="quanity-box">+</div>
+                <div class="quanity-box">1</div>
+                <div class="quanity-box">-</div>
+            </div>
+            <div class="button-container">
+                <button>ADD TO CART</button>
+                <button>BUY NOW</button>
+            </div>
+            <div class="section-detail">
+                <h3>ABOUT THE GARMENT :</h3>
+                <br>
+
+                <p>Yet another of our beautiful draped cowl silhouette !! the stripe on mal giving it a soothing and nautical feel !! A perfect pick for your resort and cruise holidays this summer !!  </p>
+                    <p>Buy the whole set here with the inner bralette and pants.
+                    
+                    Mati is designed with every woman in mind! We use only the best quality natural fabrics and pay close attention to every little detail. Mati focuses on minimalistic designs and loose, flattering cuts that fit all body shapes and sizes.
+                    
+                    Since all pieces are individually handmade and tailored in my studio, each garment is unique and one off. Therefore, please expect subtle differences in color and form.
+                    
+                    The fabric we are using is 100% cotton which is soft and will suit any skin type. The fabric gets softer with each wash.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
