@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product List Page 1</title>
+        <style>
+            * {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            .divider {
+                width: 100%;
+                border-top: 1px solid black;
+                margin: 10px 0;
+            }
+
+            .header-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100px;
+                width: 100%;
+            }
+
+            .header-container h1 {
+                font-size: 40px; /* Adjusted font size for better centering */
+                font-weight: 100;
+                text-align: center;
+                color: beige;
+                text-shadow: 0 0 5px black, 0 0 5px black;
+            }
+            .product-container{
+                display: grid;
+                width: 100%;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: auto auto auto auto;
+                align-items: center;
+                justify-content: center;
+            }
+            .product{
+                position: relative;
+                text-align: center;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                box-shadow: 1.5px 1.5px;
+            }
+            .product img{
+                width: 300px;
+                height: 500px;
+                border: 4px solid beige;
+                border-radius: 8px;
+            }
+            .product p{
+                margin-top: 10px;
+                font-size: 16px;
+            }
+
+            .button-container{
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-bottom: 20px;
+                }
+            .button-container button{
+                background-color: beige;
+                color: black;
+                border: 15px;
+                padding: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                width: 200px;
+            }
+            .heart-container{
+                position: absolute;
+                top: 10px;
+                right: 35px;
+                width: 30px;
+                height: 30px;
+                background-color: grey;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .heart-container::before{
+                content: "❤️";
+                font-size: 16px;
+                color: red;
+            }
+            .heart-container2{
+                position: absolute;
+                top: 10px;
+                right: 35px;
+                width: 30px;
+                height: 30px;
+                background-color: grey;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .heart-container2::before{
+                content: "🩶";
+                font-size: 16px;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="divider"></div>
+        <div class="header-container">
+            <h1>LAKEEREIN</h1>
+        </div>
+        <div class="product-container">
+            <div class="product">
+                <div class="heart-container2"></div>
+                <img src="https://www.stylemati.in/cdn/shop/products/mati-seperates-cowl-tunic-set-peach-28291413409881_900x.jpg?v=1628025275" alt="Product 1">
+                <p>Cowl Tunic Set Peach</p>
+                <p>Rs. 13,800.00</p>
+                <div class="button-container">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="heart-container"></div>
+                <img src="https://www.stylemati.in/cdn/shop/products/mati-seperates-cowl-tunic-set-oatmeal-28291862364249_1024x.jpg?v=1627992185" alt="Product 2">
+                <p>Cowl Tunic Set OatMeal</p>
+                <p>Rs. 13,800.00</p>
+                <div class="button-container">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="heart-container"></div>
+                <img src="https://www.stylemati.in/cdn/shop/products/mati-seperates-vari-aakaar-and-trench-jacket-set-oatmeal-28291719528537_1024x.jpg?v=1628011985" alt="Product 3">
+                <p>Vari Aakaar & Trench Jacket Set Oatmeal</p>
+                <p>Rs. 21,300.00</p>
+                <div class="button-container">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="heart-container"></div>
+                <img src="https://www.stylemati.in/cdn/shop/products/mati-dresses-vari-aakaar-oatmeal-28290022670425_1024x.jpg?v=1628096917" alt="Product 4">
+                <p>Vari Aakaar Oatmeal</p>
+                <p>Rs. 7,800.00</p>
+                <div class="button-container">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="heart-container2"></div>
+                <img src="https://www.stylemati.in/cdn/shop/files/mati-dresses-lakeerein-green-frill-dress-32785981505625_1024x.jpg?v=1726317456" alt="Product 5">
+                <p>Lakeerein Green Frill Dress</p>
+                <p>Rs. 7,500.00</p>
+                <div class="button-container">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="heart-container2"></div>
+                <img src="https://www.stylemati.in/cdn/shop/products/mati-seperates-vari-aakaar-and-trench-jacket-set-peach-28289598718041_1024x.jpg?v=1628101414" alt="Product 6">
+                <p>Vari Aakaar & Trench Jacket Set Peach</p>
+                <p>Rs. 21,300.00</p>
+                <div class="button-container">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="heart-container"></div>
+                <img src="https://www.stylemati.in/cdn/shop/products/mati-dresses-vari-aakaar-blue-28291102310489_1024x.jpg?v=1628104654" alt="Product 7">
+                <p>Vari Aakaar Blue</p>
+                <p>Rs. 7,800.00</p>
+                <div class="button-container">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="heart-container2"></div>
+                <img src="https://www.stylemati.in/cdn/shop/products/mati-separates-baha-shirt-and-pant-set-ss-lavender-pleated-cotton-shirt-with-high-waisted-striped-paper-bag-pants-broad-bottom-pants-in-salmon-pink-stripes-13972700790873_1024x.jpg?v=1626240796" alt="Product 8">
+                <p>Baha Shirt and Pant Set-SS Lavender</p>
+                <p>Rs. 13,800.00</p>
+                <div class="button-container">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
