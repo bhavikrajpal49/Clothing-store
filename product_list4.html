@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product List Page 2</title>
+        <style>
+            * {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            .divider {
+                width: 100%;
+                border-top: 1px solid black;
+                margin: 10px 0;
+            }
+
+            .header-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100px;
+                width: 100%;
+            }
+
+            .header-container h1 {
+                font-size: 40px; /* Adjusted font size for better centering */
+                font-weight: 100;
+                text-align: center;
+                color: beige;
+                text-shadow: 0 0 5px black, 0 0 5px black;
+            }
+            .product-container{
+                display: grid;
+                width: 100%;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: auto auto auto auto;
+                align-items: center;
+                justify-content: center;
+            }
+            .product{
+                position: relative;
+                text-align: center;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                box-shadow: 1.5px 1.5px;
+            }
+            .product img{
+                width: 300px;
+                height: 500px;
+                border: 4px solid beige;
+                border-radius: 8px;
+            }
+            .product p{
+                margin-top: 10px;
+                font-size: 16px;
+            }
+
+            .button-container{
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-bottom: 20px;
+                }
+            .button-container button{
+                background-color: beige;
+                color: black;
+                border: 15px;
+                padding: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                width: 200px;
+            }
+            .heart-container{
+                position: absolute;
+                top: 10px;
+                right: 35px;
+                width: 30px;
+                height: 30px;
+                background-color: grey;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .heart-container::before{
+                content: "❤️";
+                font-size: 16px;
+                color: red;
+            }
+            .heart-container2{
+                position: absolute;
+                top: 10px;
+                right: 35px;
+                width: 30px;
+                height: 30px;
+                background-color: grey;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .heart-container2::before{
+                content: "🩶";
+                font-size: 16px;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="divider"></div>
+        <div class="header-container">
+            <h1>MEN'S TOP</h1>
+        </div>
+        <div class="product-container">
+            <div class="product">
+                <div class="heart-container"></div>
+                <img src="https://www.stylemati.in/cdn/shop/products/mati-shirts-tops-men-s-linen-tank-top-hearts-30881123565657_1024x.jpg?v=1671520415" alt="Product 1">
+                <p>Men's Linen Tank Top-Hearts</p>
+                <p>Rs. 5,900.00</p>
+                <div class="button-container">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="heart-container"></div>
+                <img src="https://www.stylemati.in/cdn/shop/products/mati-jacket-red-stripe-shawl-jacket-30882181709913_1024x.jpg?v=1671535716" alt="Product 2">
+                <p>Red Stripe Shawl Jacket</p>
+                <p>Rs. 9,500.00</p>
+                <div class="button-container">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="heart-container2"></div>
+                <img src="https://www.stylemati.in/cdn/shop/products/mati-shirts-tops-black-pocket-shirt-30686303387737_1024x.jpg?v=1668950385" alt="Product 3">
+                <p>Black Pocket Shirt</p>
+                <p>Rs. 8,900.00</p>
+                <div class="button-container">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="heart-container2"></div>
+                <img src="https://www.stylemati.in/cdn/shop/products/mati-shirts-tops-red-stripe-spade-t-shirt-30882204811353_1024x.jpg?v=1671536090" alt="Product 4">
+                <p>Red Stripe Spade T-shirt</p>
+                <p>Rs. 7,500.00</p>
+                <div class="button-container">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="heart-container2"></div>
+                <img src="https://www.stylemati.in/cdn/shop/products/mati-shirts-tops-beige-pocket-shirt-30686296899673_1024x.jpg?v=1668950199" alt="Product 5">
+                <p>Beige Pocket Shirt</p>
+                <p>Rs. 8,900.00</p>
+                <div class="button-container">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="heart-container"></div>
+                <img src="https://www.stylemati.in/cdn/shop/products/mati-shirts-tops-men-s-tank-top-ss-pink-30881162657881_1024x.jpg?v=1671521855" alt="Product 6">
+                <p>Men's Tank Top-SS Pink</p>
+                <p>Rs. 4,800.00</p>
+                <div class="button-container">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="heart-container2"></div>
+                <img src="https://www.stylemati.in/cdn/shop/files/mati-shirts-tops-mustard-emb-zari-spade-overlap-shirt-33150634426457_1024x.jpg?v=1727914582" alt="Product 7">
+                <p>Mustard EMB Zari Spade Overlap Shirt</p>
+                <p>Rs. 14,500.00</p>
+                <div class="button-container">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="heart-container"></div>
+                <img src="https://www.stylemati.in/cdn/shop/files/mati-shirts-tops-off-white-emb-back-club-overlap-shirt-33150631936089_1024x.jpg?v=1727914398" alt="Product 8">
+                <p>GOff-White EMB Back CLub Overlap Shirt</p>
+                <p>Rs. 14,500.00</p>
+                <div class="button-container">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
