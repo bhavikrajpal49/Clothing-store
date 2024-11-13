@@ -39,6 +39,9 @@
                 align-items: center;
                 justify-content: center;
             }
+            .product-container a{
+                text-decoration: none;
+            }
             .product{
                 position: relative;
                 text-align: center;
@@ -109,6 +112,18 @@
                 font-size: 16px;
                 color: red;
             }
+
+
+            .no-decoration {
+    text-decoration: none; /* Remove underline */
+    color: inherit;        /* Inherit color from parent */
+}
+
+.no-decoration:focus,
+.no-decoration:active {
+    outline: none;         /* Remove focus outline on click */
+}
+
         </style>
         <script>
             // JavaScript to fetch and insert header.html
@@ -137,6 +152,7 @@
             <h1>LAKEEREIN</h1>
         </div>
         <div class="product-container">
+            <a href="../womens-clothes-prdDetails/1stLakeerein.html" class="no-decoration">
             <div class="product">
                 <div class="heart-container2"></div>
                 <img src="https://www.stylemati.in/cdn/shop/products/mati-seperates-cowl-tunic-set-peach-28291413409881_900x.jpg?v=1628025275" alt="Product 1">
@@ -146,6 +162,7 @@
                     <button>Add to Cart</button>
                 </div>
             </div>
+        </a>
             <div class="product">
                 <div class="heart-container"></div>
                 <img src="https://www.stylemati.in/cdn/shop/products/mati-seperates-cowl-tunic-set-oatmeal-28291862364249_1024x.jpg?v=1627992185" alt="Product 2">
@@ -173,6 +190,7 @@
                     <button>Add to Cart</button>
                 </div>
             </div>
+            <a href="../womens-clothes-prdDetails/5thLakeerein.html" class="no-decoration">
             <div class="product">
                 <div class="heart-container2"></div>
                 <img src="https://www.stylemati.in/cdn/shop/files/mati-dresses-lakeerein-green-frill-dress-32785981505625_1024x.jpg?v=1726317456" alt="Product 5">
@@ -182,6 +200,7 @@
                     <button>Add to Cart</button>
                 </div>
             </div>
+            </a>
             <div class="product">
                 <div class="heart-container2"></div>
                 <img src="https://www.stylemati.in/cdn/shop/products/mati-seperates-vari-aakaar-and-trench-jacket-set-peach-28289598718041_1024x.jpg?v=1628101414" alt="Product 6">

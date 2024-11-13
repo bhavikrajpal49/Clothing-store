@@ -49,6 +49,9 @@
                 margin-bottom: 10px;
                 box-shadow: 1.5px 1.5px;
             }
+            .product a{
+                text-decoration: none;
+            }
             .product img{
                 width: 300px;
                 height: 500px;
@@ -109,6 +112,15 @@
                 content: "🩶";
                 font-size: 16px;
                 color: red;
+            }
+            .no-decoration {
+            text-decoration: none; 
+            color: inherit; 
+            }
+
+            .no-decoration:focus,
+            .no-decoration:active {
+            outline: none;         
             }
         </style>
         <script>
@@ -174,7 +186,9 @@
                     <button>Add to Cart</button>
                 </div>
             </div>
+            <a href="../mens-prdDetails/5thMensTop.html" class="no-decoration">
             <div class="product">
+                
                 <div class="heart-container2"></div>
                 <img src="https://www.stylemati.in/cdn/shop/products/mati-shirts-tops-beige-pocket-shirt-30686296899673_1024x.jpg?v=1668950199" alt="Product 5">
                 <p>Beige Pocket Shirt</p>
@@ -183,6 +197,7 @@
                     <button>Add to Cart</button>
                 </div>
             </div>
+            </a>
             <div class="product">
                 <div class="heart-container"></div>
                 <img src="https://www.stylemati.in/cdn/shop/products/mati-shirts-tops-men-s-tank-top-ss-pink-30881162657881_1024x.jpg?v=1671521855" alt="Product 6">
